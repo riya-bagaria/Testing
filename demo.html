@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bulma.css">
+</head>
+
+<body onload="init()">
+    <div id="app"></div>
+    <div class="container">
+        <div class="field">
+            <label class="label">Start Time</label>
+            <div class="control">
+                <input class="input" type="text" placeholder="22:00" id="startTime">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Finish Time</label>
+            <div class="control">
+                <input class="input" type="text" placeholder="15:00" id="endTime">
+            </div>
+        </div>
+
+        <div class="field">
+                <label class="label">Subject</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="CS" id="subject">
+                </div>
+        </div>
+        <div class="field">
+                <label class="label">Lecture Hall</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="10" id="LT">
+                </div>
+        </div>
+        <div class="field">
+                <label class="label">Faculty</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Rajbir Kaur" id="faculty">
+                </div>
+        </div>
+        <div class="control">
+                <div class="select">
+                  <select id="day">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thrusday">Thrusday</option>
+                    <option value="Friday">Friday</option>
+                  </select>
+                </div>
+        </div>
+        <div class="field">
+                <p class="control">
+                  <button onclick="onSubmitPressed()" class="button is-success">
+                    Submit
+                  </button>
+                </p>
+              </div>
+    </div>
+</body>
+<script src="demo.js"></script>
+
+</html>
